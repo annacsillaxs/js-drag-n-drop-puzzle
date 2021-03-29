@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Heebo", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #fefefe;
+  color: #555;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+li {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+}
+
+div {
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  cursor: pointer;
+  color: inherit;
+  padding: 6px 12px;
+  margin: 0.6rem 0.4rem 0;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0.1rem;
+  width: 70vh;
+  height: 70vh;
+  background-color: transparent;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px 3px rgba(0, 0, 0, 0.1), 0 2px 5px 3px rgba(0, 0, 0, 0.1);
+}
+
+.box {
+  background-color: burlywood;
+  border-radius: 5px;
+  cursor: pointer;
+  color: transparent;
+  /* background: url(./img/1.jpg); */
+}
+
+.hovered {
+  border: 2px solid #444;
+  border-radius: 5px;
+}
+
+.wrong {
+  border: 2px solid #eb1717;
+  border-radius: 5px;
+}
+
+.right {
+  border: 2px solid #72f034;
+  border-radius: 5px;
+}
